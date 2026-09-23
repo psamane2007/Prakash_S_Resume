@@ -204,3 +204,35 @@ li{
 }
 
 }
+.social-buttons {
+    display: flex;
+    gap: 12px;
+    margin-top: 18px;
+}
+
+.social-btn {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid #1565C0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    color: #1565C0;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.social-btn:hover {
+    background: #1565C0;
+    color: #fff;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+
+    .social-buttons {
+        justify-content: center;
+    }
+
+}
