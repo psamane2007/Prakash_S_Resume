@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time Off: User Guide</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1f2328;
+    --muted: #59636e;
+    --border: #d1d9e0;
+    --accent: #2457c5;
+    --head-bg: #f3f5f8;
+    --note-bg: #fff8e1;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #16181d;
+      --text: #e6e8eb;
+      --muted: #9aa4b2;
+      --border: #333a45;
+      --accent: #7aa2f7;
+      --head-bg: #20242b;
+      --note-bg: #2a2614;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 40px 20px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 8px; }
+  h2 { font-size: 1.5rem; margin: 44px 0 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border); }
+  h3 { font-size: 1.15rem; margin: 28px 0 6px; }
+  p.lead { color: var(--muted); margin: 0 0 8px; }
+  nav { margin: 16px 0 0; font-size: 0.95rem; }
+  nav a { color: var(--accent); text-decoration: none; margin-right: 14px; }
+  nav a:hover { text-decoration: underline; }
+  ol, ul { padding-left: 1.4rem; }
+  li { margin: 4px 0; }
+  .ph { background: var(--note-bg); border-radius: 4px; padding: 0 4px; font-weight: 600; }
+  .table-wrap { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 0.95rem; }
+  th, td { border: 1px solid var(--border); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--head-bg); }
+  @media print {
+    main { padding: 0; }
+    nav { display: none; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>Time Off: User Guide</h1>
+  <p class="lead">For employees and managers. Items highlighted in yellow are placeholders to replace with your product’s exact labels and policies.</p>
+  <nav><a href="#employees">For employees</a><a href="#managers">For managers</a><a href="#troubleshooting">Troubleshooting</a></nav>
+
+  <h2 id="employees">For employees</h2>
+
+  <h3>Requesting time off</h3>
+  <ol>
+    <li>Select <span class="ph">Time Off</span> from the main menu.</li>
+    <li>Click <span class="ph">Request Time Off</span>.</li>
+    <li>Choose the leave type (Vacation, Sick Leave, Personal Day, etc.).</li>
+    <li>Pick your start and end dates. For a partial day, choose <span class="ph">Half day</span> and select morning or afternoon.</li>
+    <li>Add an optional note for your manager, such as handoff plans or an urgent-contact option.</li>
+    <li>Review the total days requested and click <span class="ph">Submit</span>.</li>
+  </ol>
+  <p>Check your remaining balance first under <span class="ph">Time Off &gt; Balances</span>.</p>
+
+  <h3>After you submit</h3>
+  <ul>
+    <li>Your manager is notified and will approve or decline.</li>
+    <li>You’ll be notified by <span class="ph">email / in-app</span> once it’s reviewed.</li>
+    <li>Track the status (Pending, Approved, Declined) on the Time Off page.</li>
+  </ul>
+
+  <h3>Changing or canceling</h3>
+  <ul>
+    <li><strong>Pending:</strong> open the request and select <span class="ph">Edit</span> or <span class="ph">Cancel</span>.</li>
+    <li><strong>Approved:</strong> select <span class="ph">Request Change</span> or contact your manager.</li>
+  </ul>
+
+  <h2 id="managers">For managers</h2>
+
+  <h3>Reviewing requests</h3>
+  <ol>
+    <li>You’ll receive a notification when someone on your team submits a request. You can also open <span class="ph">Time Off &gt; Team Requests</span> at any time.</li>
+    <li>Open the request to see the employee, leave type, dates, total days, and any note.</li>
+    <li>Check <span class="ph">Team Calendar</span> to see who else is out during those dates.</li>
+    <li>Click <span class="ph">Approve</span> or <span class="ph">Decline</span>.</li>
+    <li>If declining, add a reason so the employee knows what to do next (for example, suggest alternate dates).</li>
+  </ol>
+
+  <h3>Things to know</h3>
+  <ul>
+    <li><strong>Response time:</strong> Requests should be reviewed within <span class="ph">X business days</span>. <span class="ph">Reminders / auto-escalation</span> apply if a request is left pending.</li>
+    <li><strong>Balances:</strong> Approving a request deducts from the employee’s balance automatically. You can see their remaining days on the request.</li>
+    <li><strong>Approved requests that change:</strong> If an employee asks to modify or cancel approved time, you’ll get a new notification to review.</li>
+    <li><strong>Out of office:</strong> If you’re away, <span class="ph">delegate approvals to another manager under Settings</span> so requests aren’t stuck.</li>
+  </ul>
+
+  <h2 id="troubleshooting">Troubleshooting</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>Issue</th><th>Who</th><th>What to do</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>“Insufficient balance”</td><td>Employee</td><td>Check available days or choose a different leave type</td></tr>
+        <tr><td>Dates unavailable</td><td>Employee</td><td>A blackout period may apply; ask your manager</td></tr>
+        <tr><td>Request stuck as Pending</td><td>Employee</td><td>Follow up with your manager or <span class="ph">HR contact</span></td></tr>
+        <tr><td>Can’t see a team member’s request</td><td>Manager</td><td>Confirm they report to you in <span class="ph">HR system</span>; contact <span class="ph">HR/admin</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</main>
+</body>
+</html>
